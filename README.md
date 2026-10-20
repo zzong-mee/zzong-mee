@@ -9,7 +9,7 @@
 
 **문제를 분석하고, 설계하고, 실제 동작하는 소프트웨어로 구현합니다.**
 
-웹 · Android · 네트워크 시뮬레이션 · Python 애플리케이션
+Discord 봇 · Android AI 앱 · Windows 유틸리티 · 네트워크 시뮬레이션
 
 <img src="https://img.shields.io/badge/Software_Development-2563EB?style=flat-square" />
 <img src="https://img.shields.io/badge/Problem_Solving-7C3AED?style=flat-square" />
@@ -24,7 +24,7 @@
 다양한 분야에서 소프트웨어를 직접 개발하며 경험을 쌓고 있습니다.
 
 - **문제 해결:** 요구사항을 기능으로 구체화하고 코드로 구현
-- **개인 개발:** Python 프로그램, Discord 봇, 네트워크 연구 진행
+- **개인 개발:** Hawawa Dosiyo 재설계, Windows 유틸리티, 네트워크 연구 진행
 - **협업 경험:** AI 음성 면접 서비스와 Android 앱 팀 프로젝트 참여
 - **기술 탐구:** 객체 인식, 네트워크 라우팅, 게임 데이터 처리 등 다양한 분야 학습
 
@@ -130,6 +130,28 @@
 
 ## 🚀 Featured Projects
 
+### 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo)
+
+<img src="https://img.shields.io/badge/SOLO_PROJECT-7C3AED?style=flat-square" alt="개인 프로젝트" />
+<img src="https://img.shields.io/badge/V3_REBUILD-F59E0B?style=flat-square" alt="v3 재설계 중" />
+
+**Python 기반 Discord 서버 운영 봇을 새 구조로 재설계하는 프로젝트**
+
+기존 dosiyo-bot과 takoyaki의 개발 경험을 바탕으로, 기능별 Cog와 슬래시 명령어를 중심으로 새롭게 구현하고 있습니다.
+
+- Discord.py 2.x 기반 슬래시 명령어와 기능별 Cog 구성
+- 정보 조회, 투표, 랜덤 팀 구성, 메시지 관리 기능 개발
+- SQLite 기반 서버별 설정·태그, 리마인더, 버튼 역할 기능 개발
+- 입퇴장 안내·서버 이벤트 기록·경험치·Discord AutoMod 연계 개발
+- 권한 검사와 서버별 데이터 분리, 오프라인 단위 테스트를 고려한 구현
+
+**Tech Stack:** `Python` `discord.py` `SQLite` `unittest`
+
+> Solo Project · Public Repository · v3 Rebuild  
+> 위 내용은 로컬 개발 브랜치의 구현 범위를 포함합니다. 미커밋 변경과 미병합 기능이 있으며, 기본 브랜치의 제공 범위와 다를 수 있습니다. 기존 봇과 데이터는 별도로 보존합니다.
+
+---
+
 ### 🎙️ AI Voice Interview
 
 <img src="https://img.shields.io/badge/TEAM_PROJECT-2563EB?style=flat-square" />
@@ -165,16 +187,16 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 
 **Project Features**
 
-- YOLOX-Nano 객체 인식 및 ONNX Runtime 추론
+- 외부 USB JPEG 입력과 YOLOX-Nano·ONNX Runtime 기반 객체 인식
 - Android Text-to-Speech 기반 한국어 음성 안내
 - USB Serial JSON 거리 데이터 수신 및 검증
 - Mock 거리 데이터 기반 테스트
-- 사용자 화면과 개발자 테스트 화면 구성
+- 사용자 화면과 개발자 테스트 화면 분리, TalkBack을 고려한 터치·음성·진동 피드백
 
 **Tech Stack:** `Kotlin` `Android` `ONNX Runtime` `YOLOX-Nano` `TTS`
 
 > Team Project · In Development  
-> 위 기능은 팀 프로젝트 전체 기준이며, 실제 센서 통합 및 보행 위험도 판단은 추가 검증 중입니다.
+> 위 기능은 팀 프로젝트 전체 기준입니다. 외부 카메라 실기기 통합은 검증 전이며, 거리 센서 실측·위험도 판단·자동 보행 안내는 아직 완성되지 않았습니다.
 
 ---
 
@@ -205,12 +227,13 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 
 ## 🤖 Discord Bot Development
 
-| Project | Type | Development | Tech Stack |
+| Project | Status | Development | Tech Stack |
 |:---|:---:|:---|:---|
-| 💬 **dosiyo-bot** | Solo | Discord 봇 로직 및 서버용 기능 개발 | Python, Discord |
-| 🍡 **takoyaki** | Solo | Discord 봇 설계 및 기능 구현 | Discord |
+| 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo) | 공개 · 재설계 중 | 슬래시 명령어와 서버 운영 기능을 새 구조로 개발 | Python, discord.py, SQLite |
+| 💬 **dosiyo-bot** | 비공개 · 보관 | 기존 Discord 봇 개발 경험 및 원본 보존 | Python, Discord |
+| 🍡 **takoyaki** | 비공개 · 보관 | 기존 Discord 봇 설계·구현 및 원본 보존 | Discord |
 
-> Both projects are private repositories.
+현재 봇 개발은 **Hawawa Dosiyo**에서 진행합니다. 이전 프로젝트의 코드와 데이터는 보존하며, 데이터 이전은 별도 계획으로 진행합니다.
 
 ---
 
@@ -218,7 +241,7 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 
 | Project | Type | Description | Tech Stack |
 |:---|:---:|:---|:---|
-| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Solo | Elden Ring 장비 프리셋 관리 Windows 유틸리티 개발 | Python, Windows |
+| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Solo | 오프라인 장비 프리셋 Windows 테스트 앱. 장비 읽기·저장 구현, 실제 게임의 프리셋 복원 검증 진행 | Python, Windows |
 | ⛏️ Minecraft Dashboard | Solo | Minecraft 대시보드 개발 | Python |
 | 📱 Flutter Practice | Solo | Flutter 및 Dart 모바일 앱 개발 학습 | Flutter, Dart |
 
@@ -255,3 +278,4 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 **Keep Learning · Keep Building**
 
 </div>
+
