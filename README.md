@@ -247,6 +247,16 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 
 ---
 
+## 📌 Public Repositories
+
+| Repository | Description |
+|:---|:---|
+| [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo) | Python·discord.py 기반 Discord 서버 운영·커뮤니티 봇 |
+| [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Windows용 오프라인 장비 프리셋 테스트 앱 |
+| [zzong-mee](https://github.com/zzong-mee/zzong-mee) | GitHub 프로필 및 프로젝트 소개 |
+
+---
+
 ## 📊 GitHub Activity
 
 <div align="center">
