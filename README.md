@@ -9,7 +9,7 @@
 
 **문제를 분석하고, 설계하고, 실제 동작하는 소프트웨어로 구현합니다.**
 
-Discord 봇 · Android AI 앱 · Windows 유틸리티 · 네트워크 시뮬레이션
+Discord 봇 · AI 기능 · Android 앱 · Windows 유틸리티 · 네트워크 시뮬레이션
 
 <img src="https://img.shields.io/badge/Software_Development-2563EB?style=flat-square" />
 <img src="https://img.shields.io/badge/Problem_Solving-7C3AED?style=flat-square" />
@@ -24,7 +24,7 @@ Discord 봇 · Android AI 앱 · Windows 유틸리티 · 네트워크 시뮬레�
 다양한 분야에서 소프트웨어를 직접 개발하며 경험을 쌓고 있습니다.
 
 - **문제 해결:** 요구사항을 기능으로 구체화하고 코드로 구현
-- **개인 개발:** Hawawa Dosiyo 재설계, Windows 유틸리티, 네트워크 연구 진행
+- **개인 개발:** Hawawa Dosiyo 운영 봇, Windows 유틸리티, 네트워크 연구 진행
 - **협업 경험:** AI 음성 면접 서비스와 Android 앱 팀 프로젝트 참여
 - **기술 탐구:** 객체 인식, 네트워크 라우팅, 게임 데이터 처리 등 다양한 분야 학습
 
@@ -133,22 +133,23 @@ Discord 봇 · Android AI 앱 · Windows 유틸리티 · 네트워크 시뮬레�
 ### 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo)
 
 <img src="https://img.shields.io/badge/SOLO_PROJECT-7C3AED?style=flat-square" alt="개인 프로젝트" />
-<img src="https://img.shields.io/badge/V3_REBUILD-F59E0B?style=flat-square" alt="v3 재설계 중" />
+<img src="https://img.shields.io/badge/ACTIVE_DEVELOPMENT-F59E0B?style=flat-square" alt="활발히 개발 중" />
 
-**Python 기반 Discord 서버 운영 봇을 새 구조로 재설계하는 프로젝트**
+**Python 기반 Discord 서버 운영·커뮤니티 봇**
 
-기존 dosiyo-bot과 takoyaki의 개발 경험을 바탕으로, 기능별 Cog와 슬래시 명령어를 중심으로 새롭게 구현하고 있습니다.
+기존 dosiyo-bot과 takoyaki의 개발 경험을 바탕으로, 기능별 Cog와 한국어 로컬라이즈 슬래시 명령어를 중심으로 개발하고 있습니다.
 
 - Discord.py 2.x 기반 슬래시 명령어와 기능별 Cog 구성
-- 정보 조회, 투표, 랜덤 팀 구성, 메시지 관리 기능 개발
-- SQLite 기반 서버별 설정·태그, 리마인더, 버튼 역할 기능 개발
-- 입퇴장 안내·서버 이벤트 기록·경험치·Discord AutoMod 연계 개발
-- 권한 검사와 서버별 데이터 분리, 오프라인 단위 테스트를 고려한 구현
+- 정보 조회, 투표·게임, 메시지 관리와 공통 오류 안내
+- SQLite 기반 서버별 설정·태그·경고 기록과 재시작 복구 예약 작업
+- 자동 역할·기간 역할·재입장 복원, 건의·추첨·추천 게시판·레벨 보상
+- 서버 멘션에만 응답하는 선택형 AI 대화 기능과 권한·Intent 설정
+- Python 3.13과 unittest 기반 오프라인 테스트 및 GitHub Actions CI
 
-**Tech Stack:** `Python` `discord.py` `SQLite` `unittest`
+**Tech Stack:** `Python 3.13` `discord.py 2.x` `SQLite` `unittest` `GitHub Actions`
 
-> Solo Project · Public Repository · v3 Rebuild  
-> 위 내용은 로컬 개발 브랜치의 구현 범위를 포함합니다. 미커밋 변경과 미병합 기능이 있으며, 기본 브랜치의 제공 범위와 다를 수 있습니다. 기존 봇과 데이터는 별도로 보존합니다.
+> Solo Project · Public Repository · Active Development  
+> 전체 Carl-bot 기능과 외부 서비스 연동을 목표로 하지 않으며, AI·멤버 이벤트 기능은 환경변수와 Discord Developer Portal Intent 설정이 필요합니다. 기존 봇과 데이터는 별도로 보존합니다.
 
 ---
 
