@@ -21,12 +21,13 @@ Discord 봇 · AI 기능 · Android 앱 · Windows 유틸리티 · 네트워크 
 
 ## 👨‍💻 About Me
 
-다양한 분야에서 소프트웨어를 직접 개발하며 경험을 쌓고 있습니다.
+Discord 서버 운영 봇과 Windows 유틸리티를 개인 개발하고, 웹·Android 팀 프로젝트와 네트워크 시뮬레이션 연구를 진행하고 있습니다.
 
-- **문제 해결:** 요구사항을 기능으로 구체화하고 코드로 구현
-- **개인 개발:** Hawawa Dosiyo 운영 봇, Windows 유틸리티, 네트워크 연구 진행
-- **협업 경험:** AI 음성 면접 서비스와 Android 앱 팀 프로젝트 참여
-- **기술 탐구:** 객체 인식, 네트워크 라우팅, 게임 데이터 처리 등 다양한 분야 학습
+| 핵심 경험 | 실제 작업 |
+|:---|:---|
+| **서비스 로직 · 데이터 저장** | Python Discord 봇에서 서버별 설정을 SQLite에 저장하고, 재시작 후 예약 작업을 복구하도록 구현했습니다. |
+| **웹 UI 설계 · 구현** | AI 음성 모의 면접 팀 프로젝트에서 Figma로 면접 화면과 사용자 흐름을 설계하고 HTML·CSS·JavaScript로 구현했습니다. |
+| **네트워크 시뮬레이션** | ns-3에서 드론 네트워크의 OLSR 라우팅과 MPR 선택을 연구하고, Python으로 실험 로그를 분석합니다. |
 
 ---
 
@@ -62,69 +63,6 @@ Discord 봇 · AI 기능 · Android 앱 · Windows 유틸리티 · 네트워크 
 | **Networking** | ns-3, OLSR, MPR, LET |
 | **UI / UX** | Figma, HTML, CSS |
 | **Development Workflow** | Git, GitHub, VS Code, Linux |
-
----
-
-## 💡 Core Development Experience
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h3>🖥️ Application Development</h3>
-
-<p>웹, Android, Windows 환경에서 소프트웨어를 개발한 경험이 있습니다.</p>
-
-<ul>
-<li>웹 프론트엔드 및 UI/UX 설계</li>
-<li>Android 애플리케이션 팀 개발</li>
-<li>Python 기반 Windows 유틸리티 개발</li>
-</ul>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>⚙️ Software Implementation</h3>
-
-<p>개인 프로젝트에서 기능을 설계하고 구현하며 테스트합니다.</p>
-
-<ul>
-<li>Discord 봇 로직 구현</li>
-<li>게임 데이터 처리 및 프리셋 관리</li>
-<li>Git 기반 버전 관리</li>
-</ul>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3>🌐 Network Research</h3>
-
-<p>네트워크 프로토콜을 분석하고 시뮬레이션으로 동작을 검증합니다.</p>
-
-<ul>
-<li>OLSR / MPR 알고리즘 분석</li>
-<li>ns-3 기반 FANET 시뮬레이션</li>
-<li>Python 기반 실험 결과 분석</li>
-</ul>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>🤖 AI Integration</h3>
-
-<p>AI 기능을 실제 애플리케이션에서 활용하는 개발 경험을 쌓고 있습니다.</p>
-
-<ul>
-<li>ONNX Runtime 기반 객체 인식</li>
-<li>Android 음성 안내 기능</li>
-<li>로컬 AI 음성 면접 서비스 개발 참여</li>
-</ul>
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -177,27 +115,15 @@ Discord 봇 · AI 기능 · Android 앱 · Windows 유틸리티 · 네트워크 
 
 ---
 
-### 👁️ Third Eye
+### 👁️ [Third Eye](https://github.com/zzong-mee/PBL1)
 
-<img src="https://img.shields.io/badge/TEAM_PROJECT-2563EB?style=flat-square" />
-<img src="https://img.shields.io/badge/IN_DEVELOPMENT-F59E0B?style=flat-square" />
+**팀 프로젝트 · 공개 저장소 · 통합 테스트 단계**
 
-**시각장애인을 위한 AI 기반 보행 보조 Android 앱**
+시각장애인의 주변 인지와 보행을 보조하기 위한 Android 앱입니다. 팀은 USB 카메라 영상에서 YOLOX-Nano로 중앙 물체를 인식하고 한국어 TTS로 안내하는 기능과, 좌·우 ToF 센서의 거리 데이터를 히트맵과 소리로 표현하는 기능을 개발하고 있습니다.
 
-AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보조 애플리케이션 팀 프로젝트입니다.
+**팀 구현 범위:** 카메라 인식과 ToF 거리 처리는 현재 별도로 동작합니다. 두 입력을 결합한 위험도 판단과 자동 보행 경고는 미완성입니다.
 
-**Project Features**
-
-- 외부 USB JPEG 입력과 YOLOX-Nano·ONNX Runtime 기반 객체 인식
-- Android Text-to-Speech 기반 한국어 음성 안내
-- USB Serial JSON 거리 데이터 수신 및 검증
-- Mock 거리 데이터 기반 테스트
-- 사용자 화면과 개발자 테스트 화면 분리, TalkBack을 고려한 터치·음성·진동 피드백
-
-**Tech Stack:** `Kotlin` `Android` `ONNX Runtime` `YOLOX-Nano` `TTS`
-
-> Team Project · In Development  
-> 위 기능은 팀 프로젝트 전체 기준입니다. 외부 카메라 실기기 통합은 검증 전이며, 거리 센서 실측·위험도 판단·자동 보행 안내는 아직 완성되지 않았습니다.
+**Tech Stack:** `Kotlin` `Android` `ONNX Runtime` `YOLOX-Nano` `USB` `ToF`
 
 ---
 
@@ -242,7 +168,7 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 
 | Project | Type | Description | Tech Stack |
 |:---|:---:|:---|:---|
-| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Solo | 오프라인 장비 프리셋 Windows 테스트 앱. 장비 읽기·저장 구현, 실제 게임의 프리셋 복원 검증 진행 | Python, Windows |
+| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Solo | 오프라인 장비 프리셋 Windows 테스트 앱. 장비 읽기·저장 구현, 키보드 단축키 동작 확인. 실게임 복원과 게임패드 동작은 미검증 | Python, Windows |
 | ⛏️ Minecraft Dashboard | Solo | Minecraft 대시보드 개발 | Python |
 | 📱 Flutter Practice | Solo | Flutter 및 Dart 모바일 앱 개발 학습 | Flutter, Dart |
 
@@ -254,7 +180,7 @@ AI 객체 인식, 음성 안내, 외부 장치 통신을 활용하는 보행 보
 |:---|:---|
 | [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo) | Python·discord.py 기반 Discord 서버 운영·커뮤니티 봇 |
 | [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Windows용 오프라인 장비 프리셋 테스트 앱 |
-| [zzong-mee](https://github.com/zzong-mee/zzong-mee) | GitHub 프로필 및 프로젝트 소개 |
+| [Third Eye](https://github.com/zzong-mee/PBL1) | USB 카메라 객체 인식과 ToF 거리 처리를 실험하는 Android 팀 프로젝트 |
 
 ---
 
