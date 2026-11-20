@@ -46,22 +46,43 @@ C++ · Python · Network Simulation · Application Development
 
 ## 🔬 Research
 
-### [APUR-OLSR — Risk-Aware and Predictive OLSR Routing for FANETs](https://github.com/zzong-mee/APUR-OLSR)
+### 📄 [CVaR-RAMPR — Risk-Aware Redundant MPR Selection for Reliable OLSR Routing in FANETs](https://github.com/zzong-mee/CVaR-RAMPR)
 
-**FANET 환경의 위험 인지·예측 기반 라우팅 프로토콜 연구** · 개인 연구 · 비공개 저장소 · 설계 및 구현 준비 단계
+**FANET 환경의 OLSR 라우팅 신뢰성 연구 · 논문 실험 재현 · 공개 저장소**
 
-빠르게 변하는 3차원 드론 네트워크에서 링크 안정성을 예측하고, 이를 OLSR의 중계 노드 선택과 경로 계산에 반영하는 **APUR-OLSR** 프로토콜을 설계하고 있습니다. 현재 명세는 **V1.4.3**이며, 아래 항목은 통합 구현이 검증된 기능이 아닌 **설계 중인 메커니즘**입니다.
+고속 이동 UAV 네트워크의 불안정한 링크에 대응하기 위해 **LET(Link Expiration Time), CVaR, 히스테리시스**를 활용한 위험 인지 중복 MPR 선택 방식을 연구했습니다.
 
-- **이동성·링크 위험 추정:** HELLO 메시지 기반 위치·속도 관측, 등속도 이동 예측, 예측 불확실성 추적, 3D Link Expiration Time(LET) 및 위험 점수 산출 설계
-- **라우팅 제어:** OLSR의 2-hop 커버리지 조건을 고려한 위험 인지 중복 MPR 선택과 상태 변화에 따른 적응형 TC 광고 설계
-- **경로 계산:** 유효한 TC 토폴로지 근거와 결합된 AP-METRIC 교환, 방향성 가중 그래프 및 Dijkstra 기반 경로 계산 설계
-- **검증 계획:** 표준 OLSR과 비교하여 PDR, 종단 간 지연, 제어 오버헤드, 경로 안정성을 ns-3 시뮬레이션으로 평가할 예정
+- **구현:** ns-3의 OLSR 기반 표준 MPR, 고정 중복, LET 기반 중복, CVaR·히스테리시스 제안 방식 등 4개 모드 비교
+- **실험 설계:** UAV 30대, 3D Gauss-Markov 이동, 속도 5~25 m/s, 4개 모드 × 5개 속도 × 10개 시드 = **200개 실험 구성**
+- **분석:** Python을 활용한 PDR, 종단 간 지연, 제어 오버헤드 분석 및 실험 결과 비교
+- **재현 검증:** 대표 조건에서 4개 모드의 기존 결과를 재현하고, 기존 200회 실험 데이터 분석 결과 확인
 
-**현재 진행 상태:** 연구 저장소와 기준 실험 소스가 준비되어 있고, 독립적인 HELLO wire-codec 테스트 이력이 있습니다. 다만 **ns-3 통합 구현·빌드 검증과 APUR-OLSR 성능 비교 실험은 아직 완료되지 않았습니다.** 실제 수정된 ns-3 구현 소스는 별도의 로컬 Git 저장소에서 관리 중입니다.
+| 15 m/s · 기존 실험 데이터 | 평균 PDR |
+|:---|---:|
+| Standard OLSR | 67.49% |
+| Proposed Method | 72.59% |
+| **관찰된 차이** | **+5.10%p** |
 
-**Stack:** `C++` · `ns-3.48` · `Python` · `Ubuntu/WSL` · `OLSR` · `MPR` · `LET`
+**Stack:** `C++` · `Python` · `ns-3` · `OLSR` · `LET` · `CVaR`
 
-**Research Repository:** [APUR-OLSR](https://github.com/zzong-mee/APUR-OLSR) (Private · 외부 열람 제한)
+**Repository:** [CVaR-RAMPR](https://github.com/zzong-mee/CVaR-RAMPR) (Public) · `main`: 논문 실험 재현 / `development`: 후속 연구
+
+### 🚁 [APUR-OLSR — Risk-Aware and Predictive OLSR Routing for FANETs](https://github.com/zzong-mee/APUR-OLSR)
+
+**예측 기반 FANET 라우팅 프로토콜 후속 연구 · 비공개 저장소 · 설계 단계**
+
+기존 OLSR의 MPR 선택을 확장하여 **이동성 예측과 링크 위험 추정**을 라우팅 제어 및 경로 계산에 반영하는 APUR-OLSR 프로토콜을 설계하고 있습니다. 현재 명세는 **V1.4.3**입니다.
+
+- **링크 예측 설계:** HELLO 기반 위치·속도 관측, 등속도 이동 예측, 불확실성 추적, 3D LET 및 링크 위험 점수
+- **라우팅 설계:** 2-hop 커버리지를 고려한 위험 인지 중복 MPR 선택과 적응형 TC 제어
+- **경로 계산 설계:** TC 토폴로지에 연계된 AP-METRIC 교환, 방향성 가중 그래프 및 Dijkstra 탐색
+- **검증 계획:** ns-3.48 환경에서 PDR, 지연, 제어 오버헤드, 경로 안정성 비교 평가
+
+**현재 상태:** 연구 저장소와 기준 실험 소스가 준비되어 있으며, 독립 HELLO 메시지 코덱 테스트 이력이 있습니다. APUR-OLSR의 **통합 ns-3 구현과 성능 비교는 아직 검증되지 않았습니다.**
+
+**Stack:** `C++` · `ns-3.48` · `Ubuntu/WSL` · `OLSR` · `MPR` · `LET`
+
+**Repository:** [APUR-OLSR](https://github.com/zzong-mee/APUR-OLSR) (Private · 외부 열람 제한)
 
 ---
 
