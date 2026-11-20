@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:176B9A,100:23B5A5&height=180&section=header&text=ZZONG-MEE&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=37&desc=Software%20Developer%20%7C%20Systems%20%26%20Simulation&descAlignY=59&descSize=16" width="100%" alt="Profile banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:102A43,50:176B9A,100:23B5A5&amp;height=180&amp;section=header&amp;text=ZZONG-MEE&amp;fontSize=44&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=37&amp;desc=Software%20Developer%20%7C%20Systems%20and%20Simulation&amp;descAlignY=59&amp;descSize=16" width="100%" alt="Profile banner" />
 
 ### Software Developer
 
@@ -26,11 +26,11 @@ C++ · Python · Network Simulation · Application Development
 
 **Programming Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,python,kotlin,js&theme=dark" alt="C++, Python, Kotlin, JavaScript" />
+<img src="https://skillicons.dev/icons?i=cpp,python,kotlin,js&amp;theme=dark" alt="C++, Python, Kotlin, JavaScript" />
 
 **Development Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,linux,androidstudio&theme=dark" alt="Git, GitHub, Linux, Android Studio" />
+<img src="https://skillicons.dev/icons?i=git,github,linux,androidstudio&amp;theme=dark" alt="Git, GitHub, Linux, Android Studio" />
 
 </div>
 
@@ -135,8 +135,8 @@ C++ · Python · Network Simulation · Application Development
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=zzong-mee&show_icons=true&theme=tokyonight&hide_border=true" height="165" alt="GitHub statistics" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzong-mee&layout=compact&theme=tokyonight&hide_border=true" height="165" alt="Top languages" />
+<img src="https://github-readme-stats.vercel.app/api?username=zzong-mee&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true" height="165" alt="GitHub statistics" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzong-mee&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true" height="165" alt="Top languages" />
 
 <img src="https://raw.githubusercontent.com/zzong-mee/zzong-mee/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake animation" />
 
@@ -148,7 +148,7 @@ C++ · Python · Network Simulation · Application Development
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:176B9A,100:23B5A5&height=110&section=footer" width="100%" alt="Footer wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:102A43,50:176B9A,100:23B5A5&amp;height=110&amp;section=footer" width="100%" alt="Footer wave" />
 
 **Design · Implement · Verify · Improve**
 
