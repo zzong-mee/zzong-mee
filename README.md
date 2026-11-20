@@ -46,9 +46,9 @@ C++ · Python · Network Simulation · Application Development
 
 ## 🔬 Research
 
-### Risk-Aware Redundant MPR Selection for Reliable OLSR Routing in Flying Ad-Hoc Networks
+### [Risk-Aware Redundant MPR Selection for Reliable OLSR Routing in Flying Ad-Hoc Networks](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks)
 
-**FANET 라우팅 신뢰성 연구 · 개인 연구 · 비공개 저장소**
+**FANET 라우팅 신뢰성 연구 · 개인 연구 · 공개 저장소**
 
 이동성이 높은 드론 네트워크에서 링크 불안정성을 고려한 **중복 MPR 선택 알고리즘**을 연구했습니다. 표준 OLSR, 고정 중복, LET 기반 방식과 CVaR·히스테리시스 기반 제안 방식을 ns-3에서 비교합니다.
 
@@ -67,7 +67,9 @@ C++ · Python · Network Simulation · Application Development
 
 **Stack:** `C++` `Python` `ns-3` `OLSR` `MPR` `LET` `CVaR`
 
-**Paper / Publication:** 연구 저장소에 위 논문 제목과 재현 코드가 기록되어 있습니다. 학술지 게재 정보, 저자 및 DOI는 확인 후 추가할 예정입니다.
+**Research Repository:** [Simulation code, experiment scripts and reproducibility notes](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks) · Public
+
+**Paper / Publication:** 연구 저장소는 논문 실험 재현을 목적으로 관리되고 있습니다. 학술지 게재 정보, 저자 및 DOI는 별도 확인 후 기재할 예정입니다.
 
 ---
 
@@ -124,10 +126,23 @@ C++ · Python · Network Simulation · Application Development
 
 | Project | Experience |
 |:---|:---|
-| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | Python·C++ 기반 Windows 오프라인 장비 프리셋 테스트 앱. 장비 데이터 읽기·저장 및 일부 단축키 검증, 실게임 복원·게임패드 검증 진행 과제 |
-| 💬 dosiyo-bot / takoyaki | 기존 Discord 봇 개인 개발 경험 · 비공개 보관 |
-| ⛏️ Minecraft Dashboard | Python 대시보드 개인 프로젝트 · 비공개 |
-| 📱 Flutter Practice | Dart·Flutter 학습 프로젝트 · 비공개 |
+| ⚔️ [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets) | **Public** · Python·C++ 기반 Windows 오프라인 장비 프리셋 테스트 앱. 장비 데이터 읽기·저장 및 일부 단축키 검증, 실게임 복원·게임패드 검증 진행 과제 |
+| 💬 dosiyo-bot / takoyaki | 기존 Discord 봇 개인 개발 경험 · **Private / Archived** |
+| ⛏️ Minecraft Dashboard | Python 대시보드 개인 프로젝트 · **Private** |
+| 📱 Flutter Practice | Dart·Flutter 학습 프로젝트 · **Private** |
+
+---
+
+## 🔗 Repository Visibility
+
+현재 계정의 저장소 공개 상태를 기준으로 정리했습니다.
+
+| Visibility | Repositories |
+|:---|:---|
+| **Public (5)** | [FANET Research](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks), [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo), [Third Eye](https://github.com/zzong-mee/PBL1), [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets), [Profile README](https://github.com/zzong-mee/zzong-mee) |
+| **Private (4)** | Flutter-Practice, minecraft-dashboard, dosiyo-bot (archived), takoyaki (archived) |
+
+> AI Voice Interview는 별도 팀 저장소 [kth-0121/interview-agents](https://github.com/kth-0121/interview-agents)에서 진행한 프로젝트로, 위 개인 계정 소유 저장소 개수에 포함하지 않았습니다.
 
 ---
 
