@@ -77,18 +77,16 @@ C++ · Python · Network Simulation · Application Development
 
 ### 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo)
 
-**Python 기반 Discord 서버 운영·커뮤니티 봇** · Solo · Public · In Development
+**Discord 서버 운영을 자동화하는 Python 봇** · 개인 프로젝트 · 개발 중
 
-기존 봇 개발 경험을 바탕으로 기능별 Cog 구조, 서버별 데이터 저장, 예약 작업과 자동 테스트를 고려하여 개발하고 있습니다.
+- **명령어 설계:** 역할, 예약, 운영 기능을 discord.py의 Cog로 분리했습니다. Discord API용 영문 식별자를 유지하면서 한국어 클라이언트에는 명령어와 옵션을 한국어로 표시합니다.
+- **데이터 저장과 재시작 복구:** SQLite에 서버별 설정과 운영 기록을 분리해 저장합니다. 재시작 후 리마인더, 기간 역할 만료, 추첨 마감과 버튼 역할 패널을 복구하도록 구현했습니다.
+- **서버 운영 기능:** 입장 시 자동·지연 역할 지급과 재입장 역할 복원, 건의 투표·승인·반려, 별 반응 추천 게시판, 경고 기록과 Discord 기본 AutoMod 연계를 지원합니다. 커뮤니티 기능으로 가상 주식 매매와 포트폴리오 조회도 제공합니다.
+- **테스트와 CI:** 모의 Discord 객체와 임시 DB로 서버별 데이터 분리, 권한 검사, 예약 복구를 테스트하고 GitHub Actions에서 `unittest`를 실행합니다.
 
-- discord.py 2.x 슬래시 명령어 및 기능별 Cog 구성
-- SQLite 기반 서버별 설정·기록 저장과 재시작 후 예약 작업 복구
-- 역할 관리, 투표, 리마인더, 건의·추첨 등 커뮤니티 기능
-- unittest 기반 오프라인 테스트와 GitHub Actions CI
+**Stack:** `Python 3.13` · `discord.py 2.x` · `SQLite` · `unittest` · `GitHub Actions`
 
-**Stack:** `Python 3.13` `discord.py` `SQLite` `unittest` `GitHub Actions`
-
-> 기능은 단계적으로 개발 중이며, Discord 권한·Intent 설정과 실제 서비스 환경에 따라 동작 범위가 달라질 수 있습니다.
+> 오프라인 테스트는 실제 Discord 서버의 통합 검증을 대신하지 않습니다. DB 하나당 봇 프로세스 하나를 전제로 하며, 알림 전송 직후 강제 종료되면 중복 전송될 수 있습니다.
 
 ### 👁️ [Third Eye](https://github.com/zzong-mee/PBL1)
 
