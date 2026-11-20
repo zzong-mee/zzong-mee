@@ -46,29 +46,22 @@ C++ · Python · Network Simulation · Application Development
 
 ## 🔬 Research
 
-### [Risk-Aware Redundant MPR Selection for Reliable OLSR Routing in Flying Ad-Hoc Networks](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks)
+### [APUR-OLSR — Risk-Aware and Predictive OLSR Routing for FANETs](https://github.com/zzong-mee/APUR-OLSR)
 
-**FANET 라우팅 신뢰성 연구 · 개인 연구 · 공개 저장소**
+**FANET 환경의 위험 인지·예측 기반 라우팅 프로토콜 연구** · 개인 연구 · 비공개 저장소 · 설계 및 구현 준비 단계
 
-이동성이 높은 드론 네트워크에서 링크 불안정성을 고려한 **중복 MPR 선택 알고리즘**을 연구했습니다. 표준 OLSR, 고정 중복, LET 기반 방식과 CVaR·히스테리시스 기반 제안 방식을 ns-3에서 비교합니다.
+빠르게 변하는 3차원 드론 네트워크에서 링크 안정성을 예측하고, 이를 OLSR의 중계 노드 선택과 경로 계산에 반영하는 **APUR-OLSR** 프로토콜을 설계하고 있습니다. 현재 명세는 **V1.4.3**이며, 아래 항목은 통합 구현이 검증된 기능이 아닌 **설계 중인 메커니즘**입니다.
 
-- **구현:** C++ 기반 OLSR 라우팅 수정, LET·CVaR·히스테리시스 활용
-- **실험:** UAV 30대, 3D Gauss-Markov 이동, 속도 5~25 m/s, 4개 알고리즘 × 5개 속도 × 10개 시드 = **200개 실험 구성**
-- **분석:** Python으로 PDR, 종단 간 지연, 제어 오버헤드 및 신뢰구간 분석
-- **재현:** 대표 조건의 4개 모드 결과와 기존 200회 실험 데이터 분석 검증
+- **이동성·링크 위험 추정:** HELLO 메시지 기반 위치·속도 관측, 등속도 이동 예측, 예측 불확실성 추적, 3D Link Expiration Time(LET) 및 위험 점수 산출 설계
+- **라우팅 제어:** OLSR의 2-hop 커버리지 조건을 고려한 위험 인지 중복 MPR 선택과 상태 변화에 따른 적응형 TC 광고 설계
+- **경로 계산:** 유효한 TC 토폴로지 근거와 결합된 AP-METRIC 교환, 방향성 가중 그래프 및 Dijkstra 기반 경로 계산 설계
+- **검증 계획:** 표준 OLSR과 비교하여 PDR, 종단 간 지연, 제어 오버헤드, 경로 안정성을 ns-3 시뮬레이션으로 평가할 예정
 
-| 15 m/s 조건 · 기존 실험 데이터 | 평균 PDR |
-|:---|---:|
-| Standard OLSR | 67.49% |
-| Proposed Method | 72.59% |
-| **관찰된 차이** | **+5.10%p** |
+**현재 진행 상태:** 연구 저장소와 기준 실험 소스가 준비되어 있고, 독립적인 HELLO wire-codec 테스트 이력이 있습니다. 다만 **ns-3 통합 구현·빌드 검증과 APUR-OLSR 성능 비교 실험은 아직 완료되지 않았습니다.** 실제 수정된 ns-3 구현 소스는 별도의 로컬 Git 저장소에서 관리 중입니다.
 
+**Stack:** `C++` · `ns-3.48` · `Python` · `Ubuntu/WSL` · `OLSR` · `MPR` · `LET`
 
-**Stack:** `C++` `Python` `ns-3` `OLSR` `MPR` `LET` `CVaR`
-
-**Research Repository:** [Simulation code, experiment scripts and reproducibility notes](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks) · Public
-
-**Paper / Publication:** 연구 저장소는 논문 실험 재현을 목적으로 관리되고 있습니다. 학술지 게재 정보, 저자 및 DOI는 별도 확인 후 기재할 예정입니다.
+**Research Repository:** [APUR-OLSR](https://github.com/zzong-mee/APUR-OLSR) (Private · 외부 열람 제한)
 
 ---
 
