@@ -133,19 +133,6 @@ C++ · Python · Network Simulation · Application Development
 
 ---
 
-## 🔗 Repository Visibility
-
-현재 계정의 저장소 공개 상태를 기준으로 정리했습니다.
-
-| Visibility | Repositories |
-|:---|:---|
-| **Public (5)** | [FANET Research](https://github.com/zzong-mee/Risk-Aware-Redundant-MPR-Selection-for-Reliable-OLSR-Routing-in-Flying-Ad-Hoc-Networks), [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo), [Third Eye](https://github.com/zzong-mee/PBL1), [Elden Ring Presets](https://github.com/zzong-mee/elden-ring-presets), [Profile README](https://github.com/zzong-mee/zzong-mee) |
-| **Private (4)** | Flutter-Practice, minecraft-dashboard, dosiyo-bot (archived), takoyaki (archived) |
-
-> AI Voice Interview는 별도 팀 저장소 [kth-0121/interview-agents](https://github.com/kth-0121/interview-agents)에서 진행한 프로젝트로, 위 개인 계정 소유 저장소 개수에 포함하지 않았습니다.
-
----
-
 ## 📊 GitHub Activity
 
 <div align="center">
