@@ -41,11 +41,11 @@ C++과 Python을 활용한 네트워크 시뮬레이션 연구를 진행하고 �
 
 **Programming Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,python,kotlin,js,html,css,dart&theme=dark" alt="Languages" />
+<img src="https://skillicons.dev/icons?i=cpp,python,kotlin,js&theme=dark" alt="Languages" />
 
 **Development Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,linux,vscode,androidstudio,figma,flutter&theme=dark" alt="Tools" />
+<img src="https://skillicons.dev/icons?i=git,github,linux,androidstudio&theme=dark" alt="Tools" />
 
 </div>
 
