@@ -63,7 +63,6 @@ C++ · Python · Network Simulation · Application Development
 | Proposed Method | 72.59% |
 | **관찰된 차이** | **+5.10%p** |
 
-> 대응 비교 95% 신뢰구간은 **−4.42~+14.63%p**로 0을 포함합니다. 따라서 이 조건에서 통계적으로 유의한 개선이 입증되었다고 단정할 수 없습니다. 전체 200개 실험의 신규 재실행 검증도 아직 완료되지 않았습니다.
 
 **Stack:** `C++` `Python` `ns-3` `OLSR` `MPR` `LET` `CVaR`
 
