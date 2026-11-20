@@ -75,24 +75,6 @@ C++ · Python · Network Simulation · Application Development
 
 ## 🚀 Featured Projects
 
-### 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo)
-
-**Discord 서버 운영 자동화 및 커뮤니티 봇** · 개인 개발 · 공개 저장소 · 개발 중
-
-서버별 설정과 운영 작업을 관리하는 Python 봇입니다. 단순 명령어 구현뿐 아니라 **기능 분리, 데이터 영속성, 재시작 복구, 자동 테스트**를 고려해 개발하고 있습니다.
-
-**주요 구현**
-- **모듈형 구조:** discord.py Cog 기반으로 역할·관리·예약·커뮤니티 기능을 분리하고, 슬래시 명령어와 옵션을 한국어로 표시
-- **데이터 관리:** SQLite에 서버별 설정과 기록을 분리 저장하고, 재시작 후 리마인더·기간 역할·추첨 마감·버튼 역할 패널 복구
-- **운영 자동화:** 자동·지연 역할, 재입장 역할 복원, 건의 승인/반려, 경고 기록, Discord AutoMod 연계, 가상 주식 기능
-- **품질 관리:** 모의 Discord 객체와 임시 DB 기반 `unittest`, GitHub Actions CI 구성
-
-**기술 역량:** `Python 3.13` · `discord.py 2.x` · `SQLite` · `unittest` · `GitHub Actions`
-
-**검증 및 한계:** 오프라인 단위 테스트를 수행하지만 실제 Discord 서버의 모든 기능과 재시작 상황을 검증한 것은 아닙니다. DB 하나당 단일 봇 프로세스를 전제로 하며 일부 예약 작업은 강제 종료 시 중복 처리 가능성이 있습니다.
-
----
-
 ### 👁️ [Third Eye](https://github.com/zzong-mee/PBL1)
 
 **외부 카메라·거리 센서 기반 Android 보행 보조 시스템 연구** · 팀 프로젝트 · 공개 저장소 · 기능 개발 및 통합 테스트
@@ -125,6 +107,24 @@ USB 카메라의 객체 인식 결과와 좌·우 ToF 센서의 거리 데이터
 **기술 역량:** `HTML` · `CSS` · `JavaScript` · `Figma`
 
 **검증 및 한계:** 직접 담당한 프론트엔드·UI/UX 작업을 중심으로 소개합니다. 전체 음성 면접 파이프라인의 통합 완료나 실제 서비스 운영은 주장하지 않습니다.
+
+---
+
+### 🤖 [Hawawa Dosiyo](https://github.com/zzong-mee/hawawa-dosiyo)
+
+**Discord 서버 운영 자동화 및 커뮤니티 봇** · 개인 개발 · 공개 저장소 · 개발 중
+
+서버별 설정과 운영 작업을 관리하는 Python 봇입니다. 단순 명령어 구현뿐 아니라 **기능 분리, 데이터 영속성, 재시작 복구, 자동 테스트**를 고려해 개발하고 있습니다.
+
+**주요 구현**
+- **모듈형 구조:** discord.py Cog 기반으로 역할·관리·예약·커뮤니티 기능을 분리하고, 슬래시 명령어와 옵션을 한국어로 표시
+- **데이터 관리:** SQLite에 서버별 설정과 기록을 분리 저장하고, 재시작 후 리마인더·기간 역할·추첨 마감·버튼 역할 패널 복구
+- **운영 자동화:** 자동·지연 역할, 재입장 역할 복원, 건의 승인/반려, 경고 기록, Discord AutoMod 연계, 가상 주식 기능
+- **품질 관리:** 모의 Discord 객체와 임시 DB 기반 `unittest`, GitHub Actions CI 구성
+
+**기술 역량:** `Python 3.13` · `discord.py 2.x` · `SQLite` · `unittest` · `GitHub Actions`
+
+**검증 및 한계:** 오프라인 단위 테스트를 수행하지만 실제 Discord 서버의 모든 기능과 재시작 상황을 검증한 것은 아닙니다. DB 하나당 단일 봇 프로세스를 전제로 하며 일부 예약 작업은 강제 종료 시 중복 처리 가능성이 있습니다.
 
 ---
 
